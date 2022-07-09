@@ -1,0 +1,54 @@
+<div class="ms-content-wrapper ms-auth">
+    <div class="ms-auth-container">
+        <div class="ms-auth-col">
+            <div class="ms-auth-bg"></div>
+        </div>
+        <div class="ms-auth-col">
+            <div class="ms-auth-form2">
+                <form [formGroup]="loginForm" (validSubmit)="onSubmit()" class="clearfix">
+                    <h3>Acceda a su cuenta</h3>
+                    <p>Por favor ingrese su email y contraseña para ingresar</p>
+                    <div class="mb-3">
+                        <label>Dirección de email</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email"
+                                formControlName="Email">
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label>Contraseña</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" placeholder="Contraseña"
+                                formControlName="Password">
+                        </div>
+                    </div>
+                    <div *ngIf="incorrectUserOrPassword" class="login-alert">
+                        Usuario o contraseña incorrecto
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block mt-3"><a href="javascript:void(0)" class="btn-link"
+                                (click)="open(modalone)">Olvidaste tu contraseña?</a></label>
+                    </div>
+                    <button class="btn btn-primary mt-4 d-block w-100" type="submit">Acceder</button>
+                </form>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<ng-template #modalone let-modal>
+    <div class="modal-body text-center">
+        <button type="button" class="close" (click)="modal.dismiss('Cross click')"><span
+                aria-hidden="true">&times;</span></button>
+        <i class="flaticon-secure-shield d-block"></i>
+        <h1>Olvidaste tu contraseña?</h1>
+        <p> Ingresa tu email para recuperarla </p>
+        <form>
+            <div class="ms-form-group has-icon">
+                <input type="text" placeholder="Email" class="form-control" name="forgot-password" value="">
+                <i class="material-icons">email</i>
+            </div>
+            <button type="submit" class="btn btn-primary shadow-none">Recuperar Contraseña</button>
+        </form>
+    </div>
+</ng-template>
