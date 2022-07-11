@@ -1,0 +1,12 @@
+.ms-auth-form2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 8rem;
+}
+
+.login-alert {
+    color: #ff0018;
+    font-weight: bolder;
+}

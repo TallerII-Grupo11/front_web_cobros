@@ -1,0 +1,12 @@
+<div class="ms-content-wrapper ms-auth">
+    <div class="ms-auth-container">
+        <div class="ms-auth-col">
+            <div *ngIf="pagoExitoso">
+                <h3>Muchas gracias por comprar FiubaCoins!</h3>
+            </div>
+            <div *ngIf="errorPago">
+                <h3>Hubo un error procesando el pago. Intente nuevamente</h3>
+            </div>
+        </div>
+    </div> 
+</div>

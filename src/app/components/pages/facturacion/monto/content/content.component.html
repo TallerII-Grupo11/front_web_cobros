@@ -1,0 +1,28 @@
+<div class="ms-content-wrapper">
+    <div class="row">
+        <div class="col-xl-6 col-md-12">
+            <div class="ms-panel ms-panel-fh">
+                <div class="ms-panel-header">
+                    <h6>Compra FiubaCoins</h6>
+                </div>
+                <div class="ms-panel-body">
+                    <form class="needs-validation clearfix" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom25">Cantidad</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" [ngClass]="{'ng-invalid ng-touched is-invalid ng-dirty': invalidFormPrecio}" [(ngModel)]="cantidadFiubaCoins" name="precio" 
+                                        placeholder="$" required (change)="validarPrecio()" (keypress)="numberOnly($event)">
+                                    <div class="invalid-feedback">
+                                        Formato de precio incorrecto.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-primary mr-2" (click)="confirmarPago()">Continuar</button>
+                </div>                           
+            </div>
+        </div>
+    </div>
+</div>
