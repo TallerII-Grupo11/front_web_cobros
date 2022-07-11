@@ -25,13 +25,13 @@ export class UserService {
 
     // App Firebase configuration
     private firebaseConfig = {
-        apiKey: ENV.firebaseConfig.apiKey,
-        authDomain: ENV.firebaseConfig.authDomain,
-        projectId: ENV.firebaseConfig.projectId,
-        storageBucket: ENV.firebaseConfig.storageBucket,
-        messagingSenderId: ENV.firebaseConfig.messagingSenderId,
-        appId: ENV.firebaseConfig.appId,
-        measurementId: ENV.firebaseConfig.measurementId
+        apiKey: ENV.firebaseConfig_apiKey,
+        authDomain: ENV.firebaseConfig_authDomain,
+        projectId: ENV.firebaseConfig_projectId,
+        storageBucket: ENV.firebaseConfig_storageBucket,
+        messagingSenderId: ENV.firebaseConfig_messagingSenderId,
+        appId: ENV.firebaseConfig_appId,
+        measurementId: ENV.firebaseConfig_measurementId
     };
 
     private FirebaseErrorCodes = {
