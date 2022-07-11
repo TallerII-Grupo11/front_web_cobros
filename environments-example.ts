@@ -1,4 +1,4 @@
-export const environment = {
+export const ENV = {
     production: false,
     firebaseConfig_apiKey: "xxx-YQ4",
     firebaseConfig_authDomain: "xxx.firebaseapp.com",
@@ -7,5 +7,5 @@ export const environment = {
     firebaseConfig_messagingSenderId: "xxx",
     firebaseConfig_appId: "xxx",
     firebaseConfig_measurementId: "xxx",
-    admin_wallet_address: "0x0851C7F30B6eE27DC7cbBD9Fc261D0302241FFCf"
+    admin_wallet_address: "0x2722E3f9BA79904650B88f530fa98B519f3742Bc"
  };
